@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 23:52:08 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/03 07:26:26 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:41:42 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class ClapTrap
 			void				beRepaired(unsigned int amount);
 			const std::string&	getName() const;
 			int					getAttack() const;
+			int					getEnergy() const;
 			int					getHitPoints() const;
 
 	protected:

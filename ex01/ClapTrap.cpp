@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 23:53:15 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/03 07:29:17 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:42:45 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 //	CONSTRUCTOR
 
-ClapTrap::ClapTrap() : _name("Nameless"), _HitPoints(100), _EnergyPoints(10), _AttackDamage(0) {
+ClapTrap::ClapTrap() : _name("Nameless"), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0) {
 	std::cout << "Default constructor ClapTrap: " << _name << " called!" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string name) : _name(name), _HitPoints(100), _EnergyPoints(10), _AttackDamage(0) {
+ClapTrap::ClapTrap(const std::string name) : _name(name), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0) {
 	std::cout << "String constructor ClapTrap: " << _name << " called!" << std::endl;
 }
 
@@ -96,6 +96,10 @@ int	ClapTrap::getAttack() const {
 
 int	ClapTrap::getHitPoints() const {
 	return (_HitPoints);
+}
+
+int	ClapTrap::getEnergy() const {
+	return (_EnergyPoints);
 }
 
 //	OPERATOR

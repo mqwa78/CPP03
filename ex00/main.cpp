@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 22:41:20 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/01 23:56:00 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:27:34 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,38 @@
 
 int		main(void) {
 
-	ClapTrap	r2("R2D2");
-	ClapTrap	c3("C3PO");
-	
-	r2.attack("");
-	c3.attack("Titeuf");
-	r2.takeDamage(50);
-	c3.takeDamage(1);
-	r2.attack("");
-	c3.attack("Titeuf");
-	return (0);
+	ClapTrap clap1("Warrior");
+    ClapTrap clap2("Assassin");
+
+	std::cout << std::endl;
+	std::cout << clap1.getName() << " stats: ";
+	std::cout << "attack: " << clap1.getAttack() << " et HP: " << clap1.getHitPoints() << std::endl;
+	std::cout << clap2.getName() << " stats: ";
+	std::cout << "attack: " << clap2.getAttack() << " et HP: " << clap2.getHitPoints() << std::endl;
+    clap1.attack("Assassin");
+    clap2.takeDamage(5);
+
+	std::cout << std::endl;
+	std::cout << clap1.getName() << " stats: ";
+	std::cout << "attack: " << clap1.getAttack() << " et HP: " << clap1.getHitPoints() << std::endl;
+	std::cout << clap2.getName() << " stats: ";
+	std::cout << "attack: " << clap2.getAttack() << " et HP: " << clap2.getHitPoints() << std::endl;
+    clap2.attack("Warrior");
+    clap1.takeDamage(3);
+
+	std::cout << std::endl;
+	std::cout << clap1.getName() << " stats: ";
+	std::cout << "attack: " << clap1.getAttack() << " et HP: " << clap1.getHitPoints() << std::endl;
+	std::cout << clap2.getName() << " stats: ";
+	std::cout << "attack: " << clap2.getAttack() << " et HP: " << clap2.getHitPoints() << std::endl;
+    clap1.beRepaired(4);
+    clap2.beRepaired(2);
+
+	std::cout << std::endl;
+	std::cout << clap1.getName() << " stats: ";
+	std::cout << "attack: " << clap1.getAttack() << " et HP: " << clap1.getHitPoints() << std::endl;
+	std::cout << clap2.getName() << " stats: ";
+	std::cout << "attack: " << clap2.getAttack() << " et HP: " << clap2.getHitPoints() << std::endl;
+	std::cout << std::endl;
+    return (0);
 }

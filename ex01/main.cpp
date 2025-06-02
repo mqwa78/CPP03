@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 23:53:48 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/03 07:36:22 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:45:28 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int		main(void) {
 		scavy.guardGate();
 		std::cout << clapy.getName() << " has " << clapy.getHitPoints() << " HitPoints left!" << std::endl;
 		std::cout << scavy.getName() << " has " << scavy.getHitPoints() << " HitPoints left!" << std::endl;
+		std::cout << clapy.getName() << " has " << clapy.getEnergy() << " EnergyPoints left!" << std::endl;
+		std::cout << scavy.getName() << " has " << scavy.getEnergy() << " EnergyPoints left!" << std::endl;
 	}
 	if (!scavy.getHitPoints())
 		std::cout << "Congratulation ! " << clapy.getName() << " won !" << std::endl;

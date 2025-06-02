@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 04:27:34 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/03 08:18:57 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:47:33 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 //	CONSTRUCTOR
 
-ClapTrap::ClapTrap() : _name("Nameless"), _HitPoints(100), _EnergyPoints(10), _AttackDamage(0) {
+ClapTrap::ClapTrap() : _name("Nameless"), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0) {
 	std::cout << "Default constructor ClapTrap: " << _name << " called!" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string name) : _name(name), _HitPoints(100), _EnergyPoints(10), _AttackDamage(0) {
+ClapTrap::ClapTrap(const std::string name) : _name(name), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0) {
 	std::cout << "String constructor ClapTrap: " << _name << " called!" << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: mqwa <mqwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 22:12:24 by mqwa              #+#    #+#             */
-/*   Updated: 2025/05/03 03:55:07 by mqwa             ###   ########.fr       */
+/*   Updated: 2025/06/02 17:27:31 by mqwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,21 @@ void	ClapTrap::beRepaired(unsigned int amount) {
 		else
 			_HitPoints += amount;
 	}
+}
+
+const std::string&	ClapTrap::getName() const {
+
+	return (_name);
+}
+
+int	ClapTrap::getAttack() const {
+
+	return (_AttackDamage);
+}
+
+int	ClapTrap::getHitPoints() const {
+
+	return (_HitPoints);
 }
 
 //	OPERATOR
